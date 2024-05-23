@@ -69,7 +69,7 @@
     filter: brightness(75%);
 }
 
-.register {
+.register, .iniciar-sesion {
     position: absolute;
     left: 37%;
     top: 5%;
@@ -85,7 +85,7 @@
     height: 0.1px;
 }
 
-.register form {
+.register form, .iniciar-sesion form {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -94,16 +94,16 @@
     width: 400px;
 }
 
-.register form h2 {
+.register form h2, .iniciar-sesion form h2 {
     text-align: center;
     margin-top: 15px
 }
 
-.register form p {
+.register form p, .iniciar-sesion form p {
     margin-left: 30px
 }
 
-.register form label {
+.register form label, .iniciar-sesion form label {
     margin: 5px 30px 0 30px;
 }
 
@@ -111,19 +111,20 @@
     margin-left: 4px;
 }
 
-.register form input {
+.register form input, .iniciar-sesion form input {
     border: none;
     margin: 0 30px;
 
 }
 
-.register form input:focus {
+.register form input:focus, .iniciar-sesion form input:focus {
     box-shadow: inset 30px 30px #736cbb44;
 }
 
-#reg-submit {
+#reg-submit, #btn-submit {
     background-color: #ffce7a;
     margin-bottom: 1rem;
+    margin-top: .5rem;
 }
 
 #terms {
@@ -143,18 +144,18 @@
     transition: opacity .5s;
 }
 
-.close {
+.close, .cerrar {
     position: absolute;
     top: 5px;
     right: 5px;
     font-size: 25px;
     border-radius: 50%;
     background-color: white;
-    color: #736cbb;
+    color: black;
     padding: 0 10.5px;
     cursor: pointer;
 }
 
 .animate__animated.animate__flipInX {
     --animate-duration: 2s;
-  }
+}

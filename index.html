@@ -39,6 +39,18 @@
       <input id="reg-submit" type="submit">
     </form>
   </div>
+
+  <div class="iniciar-sesion">
+    <form action="">
+      <div class="cerrar">X</div>
+      <h2>Iniciar Sesión</h2>
+      <label for="correo">E-Mail</label>
+      <input id="correo" required type="email" >
+      <label for="contrasenia">Contraseña</label>
+      <input id="contrasenia" required type="password" >
+      <input id="btn-submit" type="submit">
+    </form>
+  </div>
   
   <header class="sticky-top bg-dark-subtle">
     <nav class="d-flex justify-content-between py-2 px-2 bg-dark">
@@ -59,7 +71,7 @@
             <a href="#" id="register-btn" class="btn btn-warning">Registrarse</a>
           </li>
           <li class="list-inline-item">
-            <a href="" class="btn btn-secondary">Iniciar Sesión</a>
+            <a href="#" class="btn btn-secondary" id="iniciar-sesion-btn">Iniciar Sesión</a>
           </li>
         </ul>
       </div>
@@ -71,116 +83,8 @@
   <section>
     <div class="container">
       <div class="h4 text-light pb-2 my-5 border-bottom">Juegos Populares</div>
-      <div class="d-flex gap-4 flex-wrap justify-content-center">
-        <div class="imagen_juego">
-          <img src="imagenes/juegos/Resident-Evil-Village.jpg" alt="" class="borde-img" />
-          <p class="text-center text-dark" style="background-color: #ffce7a">
-            Resident Evil Village
-          </p>
-        </div>
-        <div class="imagen_juego">
-          <img src="imagenes/juegos/Horizon-Forbidden-West.png" alt="" class="borde-img" />
-          <p class="text-center text-dark" style="background-color: #ffce7a">
-            Horizon Forbidden West
-          </p>
-        </div>
-        <div class="imagen_juego">
-          <img src="imagenes/juegos/Achilles-Legends-Untold.jpg" alt="" class="borde-img" />
-          <p class="text-center text-dark" style="background-color: #ffce7a">
-            Achilles Legends Untold
-          </p>
-        </div>
-        <div class="imagen_juego">
-          <img src="imagenes/juegos/Enshrouded.jpg" alt="" class="borde-img" />
-          <p class="text-center text-dark" style="background-color: #ffce7a">
-            Enshrouded
-          </p>
-        </div>
-        <div class="imagen_juego">
-          <img src="imagenes/juegos/Alan-Wake-2.jpg" alt="" class="borde-img" />
-          <p class="text-center text-dark" style="background-color: #ffce7a">
-            Alan Wake 2
-          </p>
-        </div>
-        <div class="imagen_juego">
-          <img src="imagenes/juegos/The-Callisto-Protocol.png" alt="" class="borde-img" />
-          <p class="text-center text-dark" style="background-color: #ffce7a">
-            The Callisto Protocol
-          </p>
-        </div>
-        <div class="imagen_juego">
-          <img src="imagenes/juegos/A-Way-Out.jpg" alt="" class="borde-img" />
-          <p class="text-center text-dark" style="background-color: #ffce7a">
-            A Way Out
-          </p>
-        </div>
-        <div class="imagen_juego">
-          <img src="imagenes/juegos/Baldurs-Gate-3.png" alt="" class="borde-img" />
-          <p class="text-center text-dark" style="background-color: #ffce7a">
-            Baldurs Gate 3
-          </p>
-        </div>
-        <div class="imagen_juego">
-          <img src="imagenes/juegos/Diablo-IV.jpg" alt="" class="borde-img" />
-          <p class="text-center text-dark" style="background-color: #ffce7a">
-            Diablo IV
-          </p>
-        </div>
-        <div class="imagen_juego">
-          <img src="imagenes/juegos/Final-Fantasy-VII-Remake-Intergrade.jpg" alt="" class="borde-img" />
-          <p class="text-center text-dark" style="background-color: #ffce7a">
-            Final Fantasy VII Remake
-          </p>
-        </div>
-        <div class="imagen_juego">
-          <img src="imagenes/juegos/Forza-Motorsport.jpg" alt="" class="borde-img" />
-          <p class="text-center text-dark" style="background-color: #ffce7a">
-            Forza Motorsport
-          </p>
-        </div>
-        <div class="imagen_juego">
-          <img src="imagenes/juegos/Lies-of-P.jpg" alt="" class="borde-img" />
-          <p class="text-center text-dark" style="background-color: #ffce7a">
-            Lies of P
-          </p>
-        </div>
-        <div class="imagen_juego">
-          <img src="imagenes/juegos/No-Mans-Sky.png" alt="" class="borde-img" />
-          <p class="text-center text-dark" style="background-color: #ffce7a">
-            No Mans Sky
-          </p>
-        </div>
-        <div class="imagen_juego">
-          <img src="imagenes/juegos/Ready-or-Not.jpg" alt="" class="borde-img" />
-          <p class="text-center text-dark" style="background-color: #ffce7a">
-            Ready or Not
-          </p>
-        </div>
-        <div class="imagen_juego">
-          <img src="imagenes/juegos/The-Elder-Scrolls-V-Skyrim-Special-Edition.png" alt=""
-            class="borde-img" />
-          <p class="text-center text-dark" style="background-color: #ffce7a">
-            Skyrim
-          </p>
-        </div>
-        <div class="imagen_juego">
-          <img src="imagenes/juegos/TEKKEN-8.jpg" alt="" class="borde-img" />
-          <p class="text-center text-dark" style="background-color: #ffce7a">
-            Tekken 8
-          </p>
-        </div>
-        <div class="imagen_juego">
-          <img src="imagenes/juegos/Alone-in-the-Dark.png" alt="" class="borde-img" />
-          <p class="text-center text-dark" style="background-color: #ffce7a">
-            Alone in the Dark
-          </p>
-        </div>
-        <div class="imagen_juego">
-          <img src="imagenes/juegos/World-War-Z-Aftermath.png" alt="" class="borde-img" />
-          <p class="text-center text-dark" style="background-color: #ffce7a">
-            World War Z Aftermath
-          </p>
-        </div>
+      <div class="d-flex gap-4 flex-wrap justify-content-center videojuegos">
+
       </div>
     </div>
   </section>
@@ -271,29 +175,8 @@
   <script>
     AOS.init();
   </script>
-    <script>
-      let name = document.getElementById("name")
-      let lname = document.getElementById("lname")
-      let pass = document.getElementById("pass")
-      let country = document.getElementById("country")
-      let mail = document.getElementById("email")
-      let terms = document.getElementById("terms")
-      document.getElementById("register-btn").addEventListener("click", () => {
-        document.querySelector(".register").classList.toggle("aparecer")
-      })
-  
-      document.querySelector(".close").addEventListener("click", () => {
-        document.querySelector(".register").classList.toggle("aparecer")
-      })
-      document.getElementById("reg-submit").addEventListener("click", () => {
-  
-  
-        if (name.value.length > 2 && name.value.length <= 20 && lname.value.length > 2 && lname.value.length <= 20 && pass.value.length > 2 && pass.value.length <= 20 && pass.value.length > 2 && pass.value.length <= 20 && country.value.length > 2 && country.value.length <= 20 && mail.value.length > 2 && mail.value.length <= 50 && mail.value.includes(`@`) && mail.value.includes(`.`) && terms.checked) {
-  
-          document.querySelector(".register").classList.toggle("aparecer")
-        }
-      })
-    </script>
+  <script src="./js/main.js"></script>
+  <script src="./js/api.js"></script>
 </body>
 
 </html>
