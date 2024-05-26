@@ -85,6 +85,10 @@
     height: 0.1px;
 }
 
+.register, .iniciar-sesion {
+    display: none;
+}
+
 .register form, .iniciar-sesion form {
     display: flex;
     flex-direction: column;
@@ -114,7 +118,6 @@
 .register form input, .iniciar-sesion form input {
     border: none;
     margin: 0 30px;
-
 }
 
 .register form input:focus, .iniciar-sesion form input:focus {
@@ -139,7 +142,7 @@
 }
 
 .aparecer {
-    display: inline-block;
+    display: block;
     opacity: 1;
     transition: opacity .5s;
 }
@@ -151,7 +154,7 @@
     font-size: 25px;
     border-radius: 50%;
     background-color: white;
-    color: black;
+    color: #313131;
     padding: 0 10.5px;
     cursor: pointer;
 }

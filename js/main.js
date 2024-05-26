@@ -1,30 +1,55 @@
-let name = document.getElementById("name")
-let lname = document.getElementById("lname")
-let pass = document.getElementById("pass")
-let country = document.getElementById("country")
-let mail = document.getElementById("email")
-let terms = document.getElementById("terms")
-document.getElementById("register-btn").addEventListener("click", () => {
-  document.querySelector(".register").classList.toggle("aparecer")
-})
+document.addEventListener("DOMContentLoaded", () => {
+  let name = document.getElementById("name");
+  let lname = document.getElementById("lname");
+  let pass = document.getElementById("pass");
+  let country = document.getElementById("country");
+  let mail = document.getElementById("email");
+  let terms = document.getElementById("terms");
 
-document.querySelector(".close").addEventListener("click", () => {
-  document.querySelector(".register").classList.toggle("aparecer")
-})
-document.getElementById("reg-submit").addEventListener("click", () => {
+  document.getElementById("register-btn").addEventListener("click", () => {
+    document.querySelector(".register").classList.toggle("aparecer");
+  });
 
+  document.querySelector(".close").addEventListener("click", () => {
+    document.querySelector(".register").classList.toggle("aparecer");
+  });
 
-  if (name.value.length > 2 && name.value.length <= 20 && lname.value.length > 2 && lname.value.length <= 20 && pass.value.length > 2 && pass.value.length <= 20 && pass.value.length > 2 && pass.value.length <= 20 && country.value.length > 2 && country.value.length <= 20 && mail.value.length > 2 && mail.value.length <= 50 && mail.value.includes(`@`) && mail.value.includes(`.`) && terms.checked) {
+  document.getElementById("reg-submit").addEventListener("click", () => {
+    if (
+      name.value.length > 2 && name.value.length <= 20 &&
+      lname.value.length > 2 && lname.value.length <= 20 &&
+      pass.value.length > 2 && pass.value.length <= 20 &&
+      country.value.length > 2 && country.value.length <= 20 &&
+      mail.value.length > 2 && mail.value.length <= 50 &&
+      mail.value.includes("@") && mail.value.includes(".") &&
+      terms.checked
+    ) {
+      document.querySelector(".register").classList.toggle("aparecer");
+    }
+  });
 
-    document.querySelector(".register").classList.toggle("aparecer")
+  document.getElementById("iniciar-sesion-btn").addEventListener("click", () => {
+    document.querySelector(".iniciar-sesion").classList.toggle("aparecer");
+  });
+
+  document.querySelector(".cerrar").addEventListener("click", () => {
+    document.querySelector(".iniciar-sesion").classList.toggle("aparecer");
+  });
+});
+
+// Habilitar o deshabilitar el btn de iniciar sesion
+
+let form = document.querySelector("#iniciar-form");
+let btnSubmit = document.querySelector("#btn-submit");
+
+form.addEventListener("keyup", noDisabled)
+
+function noDisabled() {
+  email=document.querySelector("#correo").value
+  pass=document.querySelector("#contrasenia").value
+  if (email.length>0 && pass.length>0) {
+    btnSubmit.disabled = false;
+  } else {
+    btnSubmit.disabled = true;
   }
-})
-
-document.getElementById("iniciar-sesion-btn").addEventListener("click", () => {
-  document.querySelector(".iniciar-sesion").classList.toggle("aparecer")
-})
-
-document.querySelector(".cerrar").addEventListener("click", () => {
-  document.querySelector(".iniciar-sesion").classList.toggle("aparecer")
-})
-
+}
