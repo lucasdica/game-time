@@ -2,6 +2,15 @@
     border: 2px solid white;
 }
 
+.title-juego {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.datos-juego{
+    margin: 0;
+}
+
 #logo:hover {
     animation: swing;
     animation-duration: 4s;

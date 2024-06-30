@@ -11,7 +11,7 @@ async function getGames() {
     try {
         const response = await fetch(url, options);
         const data = await response.json();
-        renderGames(data.slice(0, 21));
+        renderGames(data.slice(1, 21));
     } catch (error) {
         console.error(error);
     }
@@ -19,13 +19,16 @@ async function getGames() {
 
 function renderGames(data) {
     let rows = '';
-    for (let juego of data) {
+    for (let juegos of data) {
         rows += `
         <div class="imagen_juego">
-          <img src="${juego.thumbnail}" alt="" class="borde-img" />
-          <p class="text-center text-dark" style="background-color: #ffce7a">
-            ${juego.title}
-          </p>
+            <p class="text-center text-dark title-juego" style="background-color: #ffce7a">
+            ${juegos.titulo}
+            </p>
+            <img src="${juegos.portada}" alt="" class="borde-img" />
+            <p class="text-center text-light datos-juego" style="background-color: #212529">
+            ${juegos.desarrollador}
+            </p>
         </div>
         `;
     }
